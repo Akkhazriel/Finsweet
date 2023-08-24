@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    a 
+    {color: var(--main-color)};
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+}

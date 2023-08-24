@@ -1,0 +1,98 @@
+.about {
+    &__container {
+    }
+    &__wrapper {
+        margin-top: 128px;
+        background: #F4F0F8;
+        display: flex;
+        column-gap: 82px;
+        padding: 96px 108px 96px 80px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+
+            width: 1063px;
+            height: 23px;
+            background: linear-gradient(90deg, #FFD050 73.5%, #592EA9 26.5%);
+            top: -22px;
+            right: 0;
+        }
+    }
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 515px;
+
+        .aboutUs__category {
+            color: #232536;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+        .aboutUs__title {
+            color: #232536;
+            font-family: 'Sen', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.33;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+            max-width: 490px;
+        }
+        .aboutUs__desc {
+            color: #6D6E76;
+            font-weight: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        .aboutUs__link {
+            color: #592EA9;
+            font-weight: 'Sen', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.77;
+        }
+    }
+    .ourMission {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 516px;
+
+        .ourMission__category {
+            color: #232536;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+        .ourMission__title {
+            color: #232536;
+            font-size: 28px;
+            font-family: 'Sen', sans-serif;
+            font-weight: 700;
+            line-height: 1.42;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+            max-width: 480px;
+        }
+        .ourMission__desc {
+            color: #6D6E76;
+            font-weight: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}

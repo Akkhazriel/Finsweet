@@ -1,0 +1,40 @@
+.header {
+    &__container {
+        padding: 12px 80px;
+        background: #232536;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        column-gap: 33px;
+        .nav {
+            .nav__list {
+                display: flex;
+                column-gap: 25px;
+                .nav__link {
+                    color: #FFF;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    line-height: 1.75;
+                    font-size: 16px;
+                }
+            }
+        }
+        .nav-button {
+            display: inline-flex;
+            padding: 16px 49px;
+            
+            color: #232536;
+            background-color: #fff;
+            font-family: 'Sen', sans-serif;
+            line-height: 1.33;
+            font-size: 18px;
+        }
+    }
+}
