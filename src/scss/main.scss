@@ -6,4 +6,5 @@
 @import "./base/utils";
 
 // blocks
-@import "./blocks/*.scss"
+@import "./blocks/index/*.scss";
+@import "./blocks/all-posts/*.scss";

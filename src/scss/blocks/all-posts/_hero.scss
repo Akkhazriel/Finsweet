@@ -1,0 +1,75 @@
+.hero {
+    &__container {
+        padding-top: 94px;
+        background: #F4F0F8;
+
+    }
+    &__wrapper {
+        display: flex;
+        padding-bottom: 80px;
+        column-gap: 141px;
+        align-items: center;
+    }
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .hero__category  {
+            color: var(--dark-text);
+            font-family: var(--main-font);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .hero__title {
+            color: var(--dark-text);
+            font-size: 36px;
+            font-family: var(--accent-font);
+            line-height: 48px;
+            letter-spacing: -2px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            max-width: 624px;
+        }
+        .hero__author {
+            color: var(--brown);
+            font-family: var(--main-font);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 16px;
+            span {
+                color: var(--accent-text);
+            }
+        }
+        .hero__desc {
+            color: var(--grey);
+            font-weight: 400;
+            font-family: var(--main-font);
+            line-height: 28px;
+            font-size: 16px;
+            margin-bottom: 32px;
+            max-width: 624px;
+        }
+        .hero__btn {
+            color: var(--dark-text);
+            font-weight: 700;
+            font-size: 18px;
+            font-family: var(--accent-font);
+            line-height: 1.33;
+
+            background: var(--gold);
+            padding: 16px 48px;
+            display: inline-flex;
+            width: 205px;
+            transition: .3s;
+
+            &:hover {
+                @include shadow;
+            }
+        }
+    }
+}
