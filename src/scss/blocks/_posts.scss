@@ -14,11 +14,11 @@
         row-gap: 32px;
 
         .featured__title {
-            color: #232536;
+            color: var(--dark-text);
 
             font-size: 36px;
             font-weight: 700;
-            font-family: 'Sen', sans-serif;
+            font-family: var(--accent-color);
             line-height: 1.33;
             letter-spacing: -2px;
         }
@@ -27,24 +27,24 @@
             flex-direction: column;
             align-items: flex-start;
             max-width: 733px;
-            border: 1px solid #6d6e7648;
+            border: 1px solid var(--grey-light);
             padding: 32px;
 
             .current__author {
-                color: #4C4C4C;
+                color: var(--brown);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 1.42;
-                font-family: 'Inter', sans-serif;
+                font-family: var(--main-font);
                 margin-top: 32px;
                 margin-bottom: 16px;
                 span {
-                    color: #592ea9;
+                    color: var(--accent-text);
                 }
             }
             .current__title {
-                color: #232536;
-                font-family: 'Sen', sans-serif;
+                color: var(--dark-text);
+                font-family: var(--accent-font);
                 font-size: 28px;
                 font-weight: 700;
                 letter-spacing: -1px;
@@ -52,24 +52,29 @@
                 margin-bottom: 16px;
             }
             .current__desc {
-                color: #6D6E76;
-                font-family: 'Inter', sans-serif;
+                color: var(--grey);
+                font-family: var(--main-font);
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.75;
                 margin-bottom: 32px;
             }
             .current__button {
-                background: #FFD050;
+                background: var(--gold);
                 padding: 16px 48px;
                 align-items: flex-start;
                 width: 205px;
 
-                color: #232536;
-                font-family: 'Sen', sans-serif;
+                color: var(--dark-text);
+                font-family: var(--accent-font);
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 24px;
+                transition: .5s;
+
+                &:hover {
+                    box-shadow: rgba(12, 12, 12, 0.16) 0px 10px 36px 0px, rgba(99, 99, 99, 0.06) 0px 0px 0px 1px;
+                }
             }
         }
     }
@@ -83,19 +88,23 @@
             align-items: center;
             column-gap: 30px;
             .all__title {
-                color: #232536;
+                color: var(--dark-text);
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: -2px;
                 line-height: 1.33;
-                font-family: 'Sen', sans-serif;
+                font-family: var(--accent-font);
             }
             .all__link {
-                color: #592ea9;
-                font-family: 'Inter', sans-serif;
+                color: var(--accent-text);
+                font-family: var(--main-font);
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.75;
+                transition: 0.5s;
+                &:hover {
+                    color: var(--gold);
+                }
             }
         }
         .all__body {
@@ -110,25 +119,25 @@
                 row-gap: 8px;
                 transition: .3s;
                 &:hover {
-                    background: #F8F6EA;
+                    background: var(--gold-light);
                 }
 
                 .body-item__author {
-                    color: #4C4C4C;
+                    color: var(--brown);
                     font-size: 14px;
-                    font-family: 'Inter', sans-serif;
+                    font-family: var(--main-font);
                     font-weight: 500;
                     line-height: 1.42;
                     
                     span {
-                        color: #592ea9;
+                        color: var(--accent-text);
                     }
                 }
                 .body-item__title {
                     max-width: 369px;
-                    color: #232536;
+                    color: var(--dark-text);
                     font-size: 24px;
-                    font-family: 'Sen', sans-serif;
+                    font-family: var(--accent-font);
                     line-height: 1.33;
                     font-weight: 700;
                 }

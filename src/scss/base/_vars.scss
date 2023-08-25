@@ -1,5 +1,20 @@
 :root {
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'Sen', sans-serif;
+    
+    --gold: #FFD050;
+    --light-text: #FFF;
+    --dark-text: #232536;
+    --grey-light: #6D6E7648;
+    --grey: #6D6E76;
+    --brown: #4C4C4C;
+    --accent-text: #592ea9;
+    --gold-light: #F8F6EA;
+    --pink-light: #F4F0F8;
+}
 
+@mixin shadow {
+    box-shadow: rgba(241, 238, 238, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 // font-family: 'Inter', sans-serif;
