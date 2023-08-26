@@ -19,13 +19,13 @@
             right: 0;
         }
     }
-    .aboutUs {
+    .aboutCompany {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 515px;
 
-        .aboutUs__category {
+        .aboutCompany__category {
             color: var(--dark-text);
             font-family: var(--main-font);
             font-size: 16px;
@@ -35,7 +35,7 @@
             letter-spacing: 3px;
             margin-bottom: 24px;
         }
-        .aboutUs__title {
+        .aboutCompany__title {
             color: var(--dark-text);
             font-family: var(--accent-font);
             font-size: 36px;
@@ -45,7 +45,7 @@
             margin-bottom: 16px;
             max-width: 490px;
         }
-        .aboutUs__desc {
+        .aboutCompany__desc {
             color: var(--grey);
             font-weight: var(--main-font);
             font-size: 19px;
@@ -53,7 +53,7 @@
             line-height: 28px;
             margin-bottom: 16px;
         }
-        .aboutUs__link {
+        .aboutCompany__link {
             color: var(--accent-text);
             font-weight: var(--accent-font);
             font-size: 18px;
