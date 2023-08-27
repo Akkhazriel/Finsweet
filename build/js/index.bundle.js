@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector(".contact-form__select"),t=document.querySelector(".contact-form-select__body");e.addEventListener("click",(()=>{t.classList.toggle("active")}))})();

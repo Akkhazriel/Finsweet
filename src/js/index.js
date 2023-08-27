@@ -1,1 +1,1 @@
-import headerFix from "./modules/fixedHeader";
+import { dropMenu } from "./modules/dropMenu";
