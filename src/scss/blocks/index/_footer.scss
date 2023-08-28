@@ -3,10 +3,17 @@
     &__container {
         background: var(--dark-text);
         padding: 59px 80px 56px 80px;
+        @media(max-width: 1920px) {
+            max-width: 100%;   
+        }
     }
     &__wrapper {
         display: flex;
         flex-direction: column;
+        @media(max-width: 1920px) {
+            max-width: 1440px;
+            margin: 0 auto;   
+        }
     }
     &-nav {
         display: flex;
