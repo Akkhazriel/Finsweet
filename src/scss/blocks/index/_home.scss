@@ -4,6 +4,9 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        @media(max-width: 1920px) {
+            max-width: 100%;
+        }
     }
     &__content {
         padding-top: 128px;
@@ -32,6 +35,14 @@
             line-height: 1.14;
             letter-spacing: -2px;
             margin-bottom: 24px;
+            @media(max-width: 1000px) {
+                max-width: 600px;
+            }
+            @media(max-width: 750px) {
+                max-width: 400px;
+                font-size: 40px;;
+                letter-spacing: 0;
+            }
         }
         .content__author {
             color: var(--light-text);
@@ -55,6 +66,10 @@
             line-height: 1.75;
             font-size: 16px;
             margin-bottom: 48px;
+            @media(max-width: 750px) {
+                max-width: 400px;
+                font-size: 14px;
+            }
         }
         .content__button {
             color: var(--dark-text);
