@@ -118,6 +118,7 @@
                 flex-direction: column;
                 row-gap: 8px;
                 transition: .3s;
+                cursor: pointer;
                 &:hover {
                     background: var(--gold-light);
                 }
