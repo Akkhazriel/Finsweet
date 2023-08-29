@@ -6,6 +6,13 @@
         @media(max-width: 1920px) {
             max-width: 100%;   
         }
+        @media(max-width: 415px) {
+            padding: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin: 0;
+            max-width: 100%;
+        }
     }
     &__wrapper {
         display: flex;
@@ -13,6 +20,10 @@
         @media(max-width: 1920px) {
             max-width: 1440px;
             margin: 0 auto;   
+        }
+        @media(max-width: 415px) {
+            padding: 0;
+            max-width: 100%;
         }
     }
     &-nav {
@@ -24,6 +35,9 @@
             flex-direction: column;
             row-gap: 20px;
         }
+        @media(max-width: 415px) {
+            row-gap: 40px;
+        }
         .footer-nav__list {
             display: flex;
             column-gap: 24px;
@@ -33,6 +47,9 @@
                 font-weight: 400;
                 line-height: 28px;
                 font-size: 16px;
+                @media(max-width: 415px) {
+                    display: none;
+                }
             }
         }
     }
@@ -46,6 +63,9 @@
             flex-direction: column;
             text-align: center;
             row-gap: 20px;
+        }
+        @media(max-width: 415px) {
+            padding: 80px 30px;
         }
         .footer-body__title {
             max-width: 562px;
@@ -65,10 +85,24 @@
             @media(max-width: 999px) {
                 max-width: 400px;
             }
+            @media(max-width: 415px) {
+                font-size: 18px;
+                letter-spacing: normal;
+                line-height: 20px;
+            }
         }
         .footer-form {
             display: flex;
             column-gap: 24px;
+            @media(max-width: 415px) {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+            @media(max-width: 280px) {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
             .footer-form__input {
                 color: var(--light-text);
                 font-family: var(--main-font);
@@ -92,6 +126,10 @@
                 font-size: 18px;
                 font-family: var(--accent-font);
                 line-height: 24px;
+                @media(max-width: 280px) {
+                    display: block;
+                    width: 200px;
+                }
             }
         }
 
@@ -101,6 +139,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media(max-width: 415px) {
+            flex-direction: column;
+            row-gap: 30px;
+            text-align: center;
+        }
 
         .footer-media__copyright {
             display: flex;
