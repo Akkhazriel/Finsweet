@@ -1,5 +1,10 @@
 .aboutCompany {
     &__container {
+        @media(max-width: 912px) {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
     }
     &__wrapper {
         margin-top: 128px;
@@ -24,12 +29,26 @@
             top: -22px;
             right: 0;
         }
+
+        @media(max-width: 415px) {
+            max-width: 100%;
+            padding: 40px 10px;
+            align-items: center;
+            text-align: center;
+            &::before {
+                width: 100%;
+            }
+        }
     }
     .aboutCompany {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 515px;
+        @media(max-width: 415px) {
+            max-width: 300px;
+            align-items: center;
+        }
 
         .aboutCompany__category {
             color: var(--dark-text);
@@ -50,14 +69,20 @@
             letter-spacing: -2px;
             margin-bottom: 16px;
             max-width: 490px;
+            @media(max-width: 415px) {
+                font-size: 20px;
+            }
         }
         .aboutCompany__desc {
             color: var(--grey);
             font-weight: var(--main-font);
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 400;
             line-height: 28px;
             margin-bottom: 16px;
+            @media(max-width: 375px) {
+                font-size: 14px;
+            }
         }
         .aboutCompany__link {
             color: var(--accent-text);
@@ -72,6 +97,10 @@
         flex-direction: column;
         align-items: flex-start;
         max-width: 516px;
+        @media(max-width: 415px) {
+            max-width: 300px;
+            align-items: center;
+        }
 
         .ourMission__category {
             color: var(--dark-text);
@@ -92,13 +121,19 @@
             letter-spacing: -1px;
             margin-bottom: 16px;
             max-width: 480px;
+            @media(max-width: 415px) {
+                font-size: 20px;
+            }
         }
         .ourMission__desc {
             color: var(--grey);
             font-weight: var(--main-font);
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 400;
             line-height: 28px;
+            @media(max-width: 415px) {
+                font-size: 16px;
+            }
         }
     }
 }
